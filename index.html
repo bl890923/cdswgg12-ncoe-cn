@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成都画册设计_成都画册印刷_成都宣传册制作_成都企业画册_成都产品画册_成都名片设计_成都名片印刷_成都特种纸名片_成都标识标牌_成都户外标识_成都科室牌_成都发光字_成都迷你发光字_成都LED发光字_成都树脂发光字_成都门头招牌_成都形象墙_成都导视系统_成都楼宇标识_成都党建标识 - 成都舜王科技有限公司综合业务部</title>
+    <meta name="description" content="成都舜王科技有限公司专业提供门头招牌、形象墙、发光字、金属字、水晶字、灯箱制作、建筑亮化、标识标牌、宣传画册、精美名片、宣传单、不干胶印刷、手提袋制作、纸杯制作、牌匾制作等全方位广告服务">
+    <meta name="keywords" content="成都画册设计,成都画册印刷,成都宣传册制作,成都企业画册,成都产品画册,成都名片设计,成都名片印刷,成都特种纸名片,成都标识标牌,成都户外标识,成都科室牌,成都发光字,成都迷你发光字,成都LED发光字,成都树脂发光字,成都门头招牌,成都形象墙,成都导视系统,成都楼宇标识,成都党建标识">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --accent-color: #9b59b6;
+            --light-color: rgba(255, 255, 255, 0.8);
+            --dark-color: #2c3e50;
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 头部样式 */
+        header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        /* 导航样式 */
+        nav {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+        }
+        
+        .nav-links li {
+            margin: 0 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Banner样式 */
+        .banner {
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('http://www.cdswgg.cn/static/upload/image/20240220/1708411358518243.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+        
+        .banner-content {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            box-shadow: var(--shadow);
+        }
+        
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        /* 内容区样式 */
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-color);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 15px auto;
+        }
+        
+        /* 公司简介样式 */
+        .about {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        /* 产品展示样式 */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-category {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-category:hover {
+            transform: translateY(-10px);
+        }
+        
+        .category-title {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        
+        .product-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 15px;
+        }
+        
+        .product-images img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-images img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* 页脚样式 */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+            }
+            
+            .banner {
+                height: 400px;
+            }
+            
+            .banner h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+            }
+            
+            .nav-links li {
+                margin: 5px 0;
+            }
+            
+            .banner {
+                height: 300px;
+                margin-top: 140px;
+            }
+            
+            .banner-content {
+                padding: 20px;
+            }
+            
+            .banner h2 {
+                font-size: 1.8rem;
+            }
+            
+            .product-images {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .banner {
+                height: 250px;
+            }
+            
+            .banner h2 {
+                font-size: 1.5rem;
+            }
+            
+            .product-images {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-images img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="http://www.cdswgg.cn/static/upload/image/20240429/1714402440839476.png" alt="舜王科技Logo">
+                    <h1>成都舜王科技有限公司综合业务部</h1>
+                </div>
+                <div class="contact-info">
+                    <div class="phone">服务热线：400-028-1238</div>
+                    <div class="phone">公司座机：028-84721238</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 导航 -->
+    <nav>
+    </nav>
+    
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <h2>专业广告制作服务</h2>
+            <p>门头招牌 · 形象墙 · 发光字 · 金属字 · 水晶字 · 灯箱制作 · 建筑亮化 · 标识标牌 · 宣传画册 · 精美名片 · 宣传单 · 不干胶印刷 · 手提袋制作 · 纸杯制作 · 牌匾制作</p>
+        </div>
+    </div>
+    
+    <!-- 主要内容 -->
+    <div class="container">
+        <!-- 企业简介 -->
+        <section id="about">
+            <h2 class="section-title">企业简介</h2>
+            <div class="about">
+                <p>成都舜王科技有限公司综合业务部是一家专业从事广告制作与设计服务的综合性企业。公司拥有多年的行业经验，致力于为客户提供全方位、高品质的广告制作解决方案。</p>
+                <p>我们的服务范围涵盖门头招牌、形象墙、发光字、金属字、水晶字、灯箱制作、建筑亮化、标识标牌、宣传画册、精美名片、宣传单、不干胶印刷、手提袋制作、纸杯制作、牌匾制作等各类广告制作项目。</p>
+                <p>我们始终坚持"质量第一、客户至上"的经营理念，凭借专业的技术团队、先进的生产设备和严谨的质量管理体系，赢得了广大客户的信赖与好评。</p>
+                <p>无论您是需要企业形象设计，还是产品宣传物料制作，舜王科技都能为您提供专业、高效、优质的服务，助力您的品牌传播与业务发展。</p>
+            </div>                
+            <p style="font-size: 150%; font-weight: bold; margin-top: 20px; text-align: center;">服务热线：400-028-1238 | 公司座机：028-84721238</p>
+
+        </section>
+        
+        <!-- 产品展示 -->
+        <section id="products">
+            <h2 class="section-title">产品展示</h2>
+            <div class="products">
+                <!-- 门头招牌 -->
+                <div class="product-category">
+                    <div class="category-title">门头招牌</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720714310174991.jpg" alt="门头招牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720714385933735.jpg" alt="门头招牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720714459392388.jpg" alt="门头招牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720714533700123.jpg" alt="门头招牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720714608508396.jpg" alt="门头招牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720714683205956.jpg" alt="门头招牌">
+                    </div>
+                </div>
+                
+                <!-- 形象墙 -->
+                <div class="product-category">
+                    <div class="category-title">形象墙</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458752378355.jpg" alt="形象墙">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458802993248.jpg" alt="形象墙">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458853177477.jpg" alt="形象墙">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458904126108.jpg" alt="形象墙">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458955284756.jpg" alt="形象墙">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459005119395.jpg" alt="形象墙">
+                    </div>
+                </div>
+                
+                <!-- 发光字 -->
+                <div class="product-category">
+                    <div class="category-title">发光字</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453919159631.jpg" alt="发光字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453969108536.jpg" alt="发光字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720454020571107.jpg" alt="发光字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720454071281359.jpg" alt="发光字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720454121211836.jpg" alt="发光字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720454172148828.jpg" alt="发光字">
+                    </div>
+                </div>
+                
+                <!-- 金属字 -->
+                <div class="product-category">
+                    <div class="category-title">金属字</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720456824213639.jpg" alt="金属字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720456875464559.jpg" alt="金属字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720456926206029.jpg" alt="金属字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720456976129309.jpg" alt="金属字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720457027172191.jpg" alt="金属字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720457078199034.jpg" alt="金属字">
+                    </div>
+                </div>
+                
+                <!-- 水晶字 -->
+                <div class="product-category">
+                    <div class="category-title">水晶字</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458244427146.jpg" alt="水晶字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458295102252.jpg" alt="水晶字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458345159080.jpg" alt="水晶字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458396454574.jpg" alt="水晶字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458447149558.jpg" alt="水晶字">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720458498598818.jpg" alt="水晶字">
+                    </div>
+                </div>
+                
+                <!-- 灯箱制作 -->
+                <div class="product-category">
+                    <div class="category-title">灯箱制作</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453463156653.jpg" alt="灯箱制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453513602181.jpg" alt="灯箱制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453564204261.jpg" alt="灯箱制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453615105476.jpg" alt="灯箱制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453666606010.jpg" alt="灯箱制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720453717224009.jpg" alt="灯箱制作">
+                    </div>
+                </div>
+                
+                <!-- 建筑亮化 -->
+                <div class="product-category">
+                    <div class="category-title">建筑亮化</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720455491358954.jpg" alt="建筑亮化">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720455542174126.jpg" alt="建筑亮化">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720455592146174.jpg" alt="建筑亮化">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720455643181329.jpg" alt="建筑亮化">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720455694118716.jpg" alt="建筑亮化">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720456622116851.jpg" alt="建筑亮化">
+                    </div>
+                </div>
+                
+                <!-- 标识标牌 -->
+                <div class="product-category">
+                    <div class="category-title">标识标牌</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720451686543844.jpg" alt="标识标牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720451737438216.jpg" alt="标识标牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720451787428340.jpg" alt="标识标牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720451838195075.jpg" alt="标识标牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720451889140963.jpg" alt="标识标牌">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720451940950400.jpg" alt="标识标牌">
+                    </div>
+                </div>
+                
+                <!-- 宣传画册 -->
+                <div class="product-category">
+                    <div class="category-title">宣传画册</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720717886136850.jpg" alt="宣传画册">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720718697390051.jpg" alt="宣传画册">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720718333108675.jpg" alt="宣传画册">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720718259616434.jpg" alt="宣传画册">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720718184122409.jpg" alt="宣传画册">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720718110211258.jpg" alt="宣传画册">
+                    </div>
+                </div>
+                
+                <!-- 精美名片 -->
+                <div class="product-category">
+                    <div class="category-title">精美名片</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720715281167718.jpg" alt="精美名片">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720720140283454.jpg" alt="精美名片">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720720118163053.jpg" alt="精美名片">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720715428174598.jpg" alt="精美名片">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720715353481994.jpg" alt="精美名片">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720715204113320.jpg" alt="精美名片">
+                    </div>
+                </div>
+                
+                <!-- 宣传单 -->
+                <div class="product-category">
+                    <div class="category-title">宣传单</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459361169035.jpg" alt="宣传单">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459614644654.jpg" alt="宣传单">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459411115796.jpg" alt="宣传单">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459513423748.jpg" alt="宣传单">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459463167077.jpg" alt="宣传单">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240709/1720459411115796.jpg" alt="宣传单">
+                    </div>
+                </div>
+                
+                <!-- 不干胶印刷 -->
+                <div class="product-category">
+                    <div class="category-title">不干胶印刷</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720452398191092.jpg" alt="不干胶印刷">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720452499194733.jpg" alt="不干胶印刷">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720452448278553.jpg" alt="不干胶印刷">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720452347754056.jpg" alt="不干胶印刷">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720452295199434.jpg" alt="不干胶印刷">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240708/1720452245162855.jpg" alt="不干胶印刷">
+                    </div>
+                </div>
+                
+                <!-- 手提袋制作 -->
+                <div class="product-category">
+                    <div class="category-title">手提袋制作</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720716993180254.jpg" alt="手提袋制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720717440714190.jpg" alt="手提袋制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720718638197212.jpg" alt="手提袋制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720717291139708.jpg" alt="手提袋制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720717216456757.jpg" alt="手提袋制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720717142334406.jpg" alt="手提袋制作">
+                    </div>
+                </div>
+                
+                <!-- 纸杯制作 -->
+                <div class="product-category">
+                    <div class="category-title">纸杯制作</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720719592119897.jpg" alt="纸杯制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720719517836946.jpg" alt="纸杯制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720719443210667.jpg" alt="纸杯制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720719368553488.jpg" alt="纸杯制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720719293192611.jpg" alt="纸杯制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720719219122911.jpg" alt="纸杯制作">
+                    </div>
+                </div>
+                
+                <!-- 牌匾制作 -->
+                <div class="product-category">
+                    <div class="category-title">牌匾制作</div>
+                    <div class="product-images">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720720666199919.jpg" alt="牌匾制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720720648285090.jpg" alt="牌匾制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720720626124922.jpg" alt="牌匾制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720720530128600.jpg" alt="牌匾制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720715726110168.jpg" alt="牌匾制作">
+                        <img src="http://www.cdswgg.cn/static/upload/image/20240712/1720715652141811.jpg" alt="牌匾制作">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>服务热线：400-028-1238</p>
+                    <p>公司座机：028-84721238</p>
+                    <p>公司微信：13550253625</p>
+                    <p>办公地址：成都市武侯区武青五路77号</p>
+                </div>
+                <div class="footer-section">
+                    <h3>业务范围</h3>
+                    <p>门头招牌、形象墙、发光字、金属字、水晶字、灯箱制作、建筑亮化、标识标牌、宣传画册、精美名片、宣传单、不干胶印刷、手提袋制作、纸杯制作、牌匾制作</p>
+                </div>
+                <div class="footer-section">
+                    <h3>资质认证</h3>
+                    <p>增值电信业务运营牌照：川B2-20240767号</p>
+                    <p>蜀ICP备16023211号</p>
+                    <p>川作登字-2019-F-00037252</p>
+                    <p>川公网安备 51010802000011号</p>
+                    <p>川工商网备 51010820160425082720号</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2015-2024 成都舜王科技有限公司综合业务部 版权所有 XML 法律顾问：四川法锐律师事务所高级合伙人李远华律师</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 导航高亮
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
